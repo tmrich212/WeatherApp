@@ -2,21 +2,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url('bg-img.jpeg');
+    background-image: url('sunset-20180820-30593-1nxanpj.jpeg');
     background-size: cover;
     background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(
+    circle,
+    rgba(251, 242, 133, 0.6334908963585435) 0%,
+    rgba(224, 196, 91, 0.8407738095238095) 35%,
+    rgba(230, 224, 113, 1) 100%
+  );
     
+}
+
+.location {
+    color: white;
+}
+
+.city {
+    color: white;
+    padding-top: 200px;
 }
 
 .app-wrap {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding: auto;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+.info h4{
+    padding: 10px;
 }
 
 header {
@@ -54,14 +88,24 @@ main {
     text-align: center;
 }
 
-.location .city {
+#location  {
     color: white;
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-.location .date {   
+#location .date {   
+    color: white;
+    font-size: 20px;
+}
+
+.info  {
+    color: white;
+    font-size: 20px;
+}
+
+.c .f .circle {
     color: white;
     font-size: 20px;
 }
@@ -78,6 +122,10 @@ main {
     font-weight: 500;
 }
 
+.current .temp {
+    font-weight: 500;;
+}
+
 .current .weather {
     color: white;
     font-size: 32px;
@@ -92,4 +140,13 @@ main {
     font-size: 24px;
     font-weight: 500;
     text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
